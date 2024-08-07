@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Raiden</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1>Mr Raiden</h1>
+        <nav id="nav">
+            <button id="cerrar-btn" class="cerrar-menu">X</button>
+            <ul class="nav-lista">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#galeria">GALERIA</a></li>
+                <li><a href="#presentacion">QUIEN SOY</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="inicio"></div>
+
+    <div class="main-container">
+        <button class="abrir-menu" id="abrir-btn"><i class="bi bi-list"></i></button>
+
+        <div class="caja-logo">
+            <img src="recursos/logos/83476974_115925756601652_8259427972285464576_n.png" alt="Mr Raiden">
+            <div class="texto-logo">
+                <p>"Innovacion y creatividad, para darle vida a tus ideas</p>
+                <p class="invisible">...</p>
+                <p>Renovando conceptos, devolviendo el color a lo antiguo</p>
+                <p class="invisible">...</p>
+                <p>Y materializando lo intangible"</p>
+            </div>
+        </div>
+
+        <div id="galeria"></div>
+        <div class="plan-b">
+            <div class="top-galeria">
+                <h2>Algunos de mis trabajos</h2>
+                <p>(Esta página también es un trabajo mío)</p>
+            </div>
+            <div class="gallery">
+                <img class="gallery-item" src="recursos/imagenes/daren-ekon-thumb.jpg" alt="Diseño Web 1" 
+                     data-image="recursos/imagenes/daren-ekon-completa.jpg" data-heading="Daren Ekon - Landing Page" data-text="Diseñado con HTML, CSS y JS. Cuenta con galería de fotos expandibles, incrustación de iframe, banner rotativo y form de contacto directo (php). Videoteca, y botones redireccionados para redes y pagos">
+                <img class="gallery-item" src="recursos/imagenes/onamu-thumb.jpg" alt="Diseño Web 2" 
+                     data-image="recursos/imagenes/Onamu-landing.jpg" data-heading="Onamu - Plantilla" data-text="Diseño hecho para página de ilustraciones/tattos. Hecha con HTML, CSS y JS, tiene 3 pestañas integradas en un mismo Index. Cuenta con galería de fotos expandibles, form de contacto directo (php) y botones redireccionados para redes.">
+                <img class="gallery-item" src="recursos/imagenes/ormos-thumb.jpg" alt="Diseño Web 3" 
+                     data-image="recursos/imagenes/ormos-completa.jpg" data-heading="Ormos - Landing Page" data-text="Diseñado con HTML, CSS y JS. Cuenta con galería de fotos expandibles, incrustación de iframe, y botones redireccionados para redes y pagos">
+                <img class="gallery-item" src="recursos/imagenes/tienda-thumb.jpg" alt="Diseño Web 4" 
+                     data-image="recursos/imagenes/Tienda-reloj.jpg" data-heading="Tienda Virtual - Landing Page" data-text="Diseñado con HTML, CSS y JS. Cuenta con galería de fotos expandibles y rotativas, temporizador de ofertas, incrustación de iframe y botones listos para redirigir a la pagina central, para contacto y pagos">
+                <!-- Añade más imágenes con la misma estructura -->
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div id="modal-image-container">
+                    <img id="modal-image" src="" alt="Imagen en grande">
+                </div>
+                <div class="modal-text">
+                    <h3 id="modal-heading"></h3>
+                    <p id="modal-text-content"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="presentacion"></div>
+        <div class="presentacion">
+            <h2>¿Quién soy?</h2>
+            <div class="caja-foto">
+                <img src="recursos/imagenes/perfil-nueva.jpg" alt="Mr Raiden en persona">
+                <p>Soy Fede Macalli, estudiante autodidacta. Vivo cada día al 100% para no arrepentirme cuando suba a las nubes. Mi sueño es crear una empresa de videojuegos (somos muchos artistas en mi pueblo) y que sea de tod@s y para tod@s. Si bien estudié en la UNDaV, mi formación es mucho más extensa, sabiendo escribir en Python, JavaScript, Ruby, HTML, CSS y un poquitito de C# (Lo voy a necesitar para la empresa futura). Ahora me dedico al diseño web, con la intención de juntar recursos y experiencia para el futuro, y concretar así mi sueño. Proactivo, de fácil aprendizaje y con buena disposición para toda clase de trabajos.</p>
+            </div>
+
+            <div class="estudios">
+                <h2>Estudios</h2>
+                <h3>Universidad Nacional de Avellaneda</h3>
+                <p>Programador Semi Junior (2023 - 2024) - FINALIZADO<br>HTML - CSS - JAVASCRIPT - PYTHON</p>
+            </div>
+
+        </div>
+
+        <div id="contacto"></div>
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="caja-flex-contacto">
+                <div class="wsp">
+                    <i class="bi bi-whatsapp"></i>
+                    <p><b>+54 9 3549 523570</b></p>
+                </div>
+                <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <p><b>mrraidenwebdesign@gmail.com</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Mr Raiden, diseño web. 2024</p>
+    </footer>
+    
+</body>
+<script src="main.js"></script>
+</html>
